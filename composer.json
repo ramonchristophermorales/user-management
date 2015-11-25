@@ -1,0 +1,17 @@
+{
+    "name": "ramonchristophermorales/user-management",
+    "description": "A simple user management for Laravel 5",
+    "keywords": ["user management", "admin management"],
+    "homepage": "https://github.com/ramonchristophermorales",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ramon Christopher Morales",
+            "email": "ramonchristophermorales@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": ">=5.4.0"
+    }
+}
