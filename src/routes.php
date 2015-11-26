@@ -1,3 +1,3 @@
 <?php
 
-Route::get('user-management', 'Morales\UserManagement\UserManagementController@index');
+Route::get('user-management', 'RamonChristopherMorales\UserManagement\UserManagementController@index');

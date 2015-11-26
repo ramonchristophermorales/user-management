@@ -1,4 +1,4 @@
-<?php namespace Morales\UserManagement;
+<?php namespace RamonChristopherMorales\UserManagement;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -24,11 +24,11 @@ class UserManagementServiceProvider extends ServiceProvider {
 		], 'config');
 
 		$this->publishes([
-			__DIR__.'/views' => base_path('resources/views/morales/userManagement'),
+			__DIR__.'/views' => base_path('resources/views/ramonchristophermorales/userManagement'),
 		], 'views');
 
 		$this->publishes([
-			__DIR__.'/assets' => public_path('morales/userManagement'),
+			__DIR__.'/assets' => public_path('ramonchristophermorales/userManagement'),
 		], 'assets');
 
 	}
@@ -40,7 +40,7 @@ class UserManagementServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->make('Morales\UserManagement\UserManagementController');
+		$this->app->make('RamonChristopherMorales\UserManagement\UserManagementController');
 	}
 
 }
