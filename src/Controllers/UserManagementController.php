@@ -1,4 +1,4 @@
-<?php namespace RamonChristopherMorales\UserManagement;
+<?php namespace RamonChristopherMorales\UserManagement\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -17,7 +17,7 @@ class UserManagementController extends Controller {
 	{
 		$user = Auth::User();
 
-		return view('userManagement:index', compact('user'));
+		return view('userManagement::index', compact('user'));
 	}
 
 	/**

@@ -1,1 +1,1 @@
-{{ var_dump($user) }}
+@extends('ramonchristophermorales.userManagement.layouts.default')

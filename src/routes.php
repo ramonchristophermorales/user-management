@@ -1,3 +1,14 @@
 <?php
+/**
+ * routes used for user management
+ */
 
-Route::get('user-management', 'RamonChristopherMorales\UserManagement\UserManagementController@index');
+Route::group([
+    'prefix' => 'user-managemet',
+    'namespace' => 'RamonChristopherMorales\UserManagement\Controllers'
+], function() {
+
+    Route::get('', 'UserManagementController@index');
+
+});
+
