@@ -1,6 +1,5 @@
 <?php namespace RamonChristopherMorales\UserManagement\Providers;
 
-use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
 class UserManagementServiceProvider extends ServiceProvider {
@@ -42,6 +41,7 @@ class UserManagementServiceProvider extends ServiceProvider {
 	public function register()
 	{
 		$this->app->make('RamonChristopherMorales\UserManagement\Controllers\UserManagementController');
+		$this->app->make('RamonChristopherMorales\UserManagement\Kernel');
 	}
 
 }

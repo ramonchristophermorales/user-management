@@ -2,13 +2,13 @@
 /**
  * routes used for user management
  */
-
 Route::group([
-    'prefix' => 'user-managemet',
-    'namespace' => 'RamonChristopherMorales\UserManagement\Controllers'
+    'prefix' => 'user-management',
+    'middleware' => 'um.auth'
 ], function() {
 
     Route::get('', 'UserManagementController@index');
+    Route::get('login', 'UserManagementController@login');
 
 });
 

@@ -9,9 +9,9 @@ use Illuminate\Http\Request;
 class UserManagementController extends Controller {
 
 	/**
-	 * Display a listing of the resource.
+	 * landing page
 	 *
-	 * @return Response
+	 * @return \Illuminate\View\View
 	 */
 	public function index()
 	{
@@ -21,13 +21,11 @@ class UserManagementController extends Controller {
 	}
 
 	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
+	 * login page
 	 */
-	public function create()
+	public function login()
 	{
-		//
+		return view('userManagement::login', compact('user'));
 	}
 
 	/**
