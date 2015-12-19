@@ -1,6 +1,6 @@
 <?php namespace RamonChristopherMorales\UserManagement\Middleware;
 
-use Closure;
+use  Closure;
 use Illuminate\Contracts\Auth\Guard;
 
 class Authenticate {

@@ -19,9 +19,9 @@ class UserManagementServiceProvider extends ServiceProvider {
 
 		$this->loadTranslationsFrom(__DIR__.'/../lang', 'userManagement');
 
-//		$this->publishes([
-//			__DIR__.'/../config.php' => config_path('userManagement.php'),
-//		], 'config');
+		$this->publishes([
+			__DIR__.'/../config.php' => config_path('userManagement.php'),
+		], 'config');
 
 		$this->publishes([
 			__DIR__.'/../views' => base_path('resources/views/ramonchristophermorales/userManagement'),
@@ -42,6 +42,14 @@ class UserManagementServiceProvider extends ServiceProvider {
 	{
 		$this->app->make('RamonChristopherMorales\UserManagement\Controllers\UserManagementController');
 		$this->app->make('RamonChristopherMorales\UserManagement\Kernel');
+
+		/**
+		 * binding UM facades
+		 */
+		$this->app->bind('UM', function()
+		{
+			return new \RamonChristopherMorales\UserManagement\UM();
+		});
 	}
 
 }
